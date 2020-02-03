@@ -1,0 +1,41 @@
+{
+  "name": "gatsby-plugin-livehelperchat",
+  "version": "3.2.2",
+  "description": "Gatsby plugin to add Livehelperchat to your site",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "livehelper",
+    "livehelperchat"
+  ],
+  "homepage": "https://github.com/sengsara/gatsby-plugin-livehelperchat#readme",
+  "bugs": "https://github.com/ryanditjia/gatsby-plugin-livehelperchat/issues",
+  "license": "MIT",
+  "author": "Ryandi Tjia <ryandi.tjia@me.com> (https://artycurate.com), Unggul Wijayadi <wijayadi@sengsara.com> (https://sengsara.com)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/livehelperchat/gatsby-plugin-livehelperchat.git"
+  },
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "prepare": "npm run build",
+    "lint": "eslint ./src --ext .js",
+    "format": "prettier --write \"src/**/*.js\""
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "eslint": "^6.6.0",
+    "eslint-config-ryanditjia": "^3.3.0",
+    "prettier": "^1.19.1"
+  },
+  "peerDependencies": {
+    "gatsby": "^1.0.0 || ^2.0.0 || ^2.0.0-alpha || ^2.0.0-beta"
+  },
+  "engines": {
+    "node": ">=6.0"
+  },
+  "dependencies": {}
+}
