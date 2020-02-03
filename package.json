@@ -9,12 +9,12 @@
     "livehelperchat"
   ],
   "homepage": "https://github.com/sengsara/gatsby-plugin-livehelperchat#readme",
-  "bugs": "https://github.com/ryanditjia/gatsby-plugin-livehelperchat/issues",
+  "bugs": "https://github.com/sengsara/gatsby-plugin-livehelperchat/issues",
   "license": "MIT",
   "author": "Ryandi Tjia <ryandi.tjia@me.com> (https://artycurate.com), Unggul Wijayadi <wijayadi@sengsara.com> (https://sengsara.com)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/livehelperchat/gatsby-plugin-livehelperchat.git"
+    "url": "https://github.com/sengsara/livehelperchat/gatsby-plugin-livehelperchat.git"
   },
   "scripts": {
     "build": "babel src --out-dir .",
