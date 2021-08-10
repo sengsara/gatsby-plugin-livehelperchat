@@ -5,28 +5,28 @@ Based on [gatsby-plugin-crisp-chat](https://github.com/ryanditjia/gatsby-plugin-
 
 ## Install
 
-`npm install --save gatsby-plugin-crisp-chat`
+`npm install --save gatsby-plugin-livehelperchat`
 
 ## How to use
 
-To integrate Livehelperchat to your Gatsby site, you need to have an account with Livehelperchat. [Sign up](https://livehelperchat.com/order/now).
+To integrate Livehelperchat to your Gatsby site, you need to have self hosted Livehelperchat or an account with Livehelperchat. [Sign up](https://livehelperchat.com/order/now).
 
-Once you sign up, you will be prompted with ways you can integrate Livehelperchat to your site. Click the HTML option and copy your `CRISP_WEBSITE_ID`. It should be in this form: `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` (8-4-4-4-12chars).
+Once you sign up, you will be prompted with ways you can integrate Livehelperchat to your site. Click the HTML option and copy your `LIVEHELPERCHAT_URL`. 
 
-> If you aren’t new to Crisp, you can get your `CRISP_WEBSITE_ID` by going to Website Settings > Integrations > HTML.
+> If you aren’t new to Livehelperchat, you can get your `LIVEHELPERCHAT_URL` by going to Website Settings > Integrations > HTML.
 
-Upon obtaining your `CRISP_WEBSITE_ID`, you need to modify your `gatsby-config.js` as follows:
+Upon obtaining your `LIVEHELPERCHAT_URL`, you need to modify your `gatsby-config.js` as follows:
 
 ```js
 // In your gatsby-config.js
 module.exports = {
   plugins: [
     {
-      resolve: 'gatsby-plugin-crisp-chat',
+      resolve: 'gatsby-plugin-liveheperchat',
       options: {
         baseUrl: 'YOUR_LIVEHELPERCHAT_URL',
         enableDuringDevelop: false, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
-        defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
+        defer: true, // Optional. Sets the Livehelperchat loading script to defer instead of async. Defaults to false.
         enableImprovedAccessibility: false // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
         widgetSize: [],
         popupSize: [],
